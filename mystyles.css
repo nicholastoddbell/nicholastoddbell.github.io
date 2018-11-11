@@ -30,7 +30,7 @@ body { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Ty
 	  text-align:center; 
 	  border-radius: 25px; }
 
-#t1 th { background:url("https://nicholastoddbell.github.io/tabelbackground.jpg") 
+#t1 th { background:url("https://nicholastoddbell.github.io/tablebackground.jpg") 
 		 repeat; 
 	     border:10px solid #021a40;
 		 border-radius: 25px; }
