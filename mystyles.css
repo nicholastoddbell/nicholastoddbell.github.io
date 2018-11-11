@@ -11,19 +11,19 @@
 */
 
 body { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
-	   background-color:#4A4A4A; 
+	   background-color:#909497; 
 	   text-align:center; }
 	   
 .menu1 { color:#021a40; 
 		 font-weight:bold;
 		 text-align:center; 
 		 font-size:40px; 
-		 text-shadow: 7px 7px darkred; 
+		 text-shadow: 7px 7px darkgreen; 
 		 text-transform: uppercase; }
 
 #t1 { width:100%; 
 	  font-size:14px; 
-	  background-color:#5E5E5E; 
+	  background-color:#909497; 
 	  border-style:solid ; 
 	  border-width:10px ; 
 	  border-color:#021a40; 
@@ -35,12 +35,27 @@ body { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Ty
 	     border:10px solid #021a40;
 		 border-radius: 25px; }
 
-#t1 td { background-color:darkred; border:10px solid #021a40; border-radius: 25px; } 
+#t1 td { background-color:darkgreen; 
+		 border:10px solid #021a40; 
+		 border-radius: 25px; } 
 
 
-#t3 { width:100%; font-size:14px; background-color:#5E5E5E; border-style:solid ; border-width:10px ; border-color:#021a40; text-align:center;}
+#t3 { width:100%; 
+	  font-size:14px; 
+	  background-color:#909497; 
+	  border-style:solid ; 
+	  border-width:10px ; 
+	  border-color:#021a40; 
+	  text-align:center;
+	  border-radius: 25px; }
+	  
+#t3 th { border:10px solid #021a40; 
+         border-radius: 25px;
+		 background-color:#4A4A4A }
 
-#t3 td {border:10px solid #021a40; }
+#t3 td { border:10px solid #021a40; 
+         border-radius: 25px;
+		 background-color:#909497 }
 
 h2 { color:#021a40;
 	 border-style:solid; 
@@ -58,13 +73,15 @@ a:visited { color:#e6e6fa; }
 
 a:active { color:red; }
 
-p { font-size:14px; color:white; }
+p { font-size:18px; 
+	color:white; }
 
 img { display:block; 
 	  margin-left:auto; 
 	  margin-right:auto; 
 	  padding:20px;
-	  border:20px solid darkred; 
-	  background-color:#021a40;}
+	  border:20px solid darkgreen; 
+	  background-color:#021a40;
+	  border-radius: 25px; }
 	  
 	 
