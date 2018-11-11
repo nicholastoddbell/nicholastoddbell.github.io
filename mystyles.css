@@ -1,0 +1,63 @@
+/*
+
+    * Date: 11/11/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: mystyles.css external style sheet
+
+    * Program Description: This is the external style sheet holding all formating for my Portfolio.
+
+*/
+
+body { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+	   background-color:#4A4A4A; 
+	   text-align:center; }
+	   
+.menu1 { color:#021a40; 
+		 font-weight:bold;
+		 text-align:center; 
+		 font-size:40px; 
+		 text-shadow: 7px 7px darkred; 
+		 text-transform: uppercase; }
+
+#t1 { width:100%; 
+	  font-size:14px; 
+	  background-color:#5E5E5E; 
+	  border-style:solid ; 
+	  border-width:10px ; 
+	  border-color:#021a40; 
+	  text-align:center; 
+	  border-radius: 25px; }
+
+#t1 th { background:url("https://nicholastoddbell.github.io/MenuBackground.jpg") 
+		 repeat; 
+	     border:10px solid #021a40;
+		 border-radius: 25px; }
+
+#t1 td { background-color:darkred; border:10px solid #021a40; border-radius: 25px; } 
+
+h2 { color:#021a40;
+	 border-style:solid; 
+	 font-weight:bold;
+	 text-align:center; 
+	 font-size:32px; 
+	 text-transform:uppercase; 
+	 border-width:10px; 
+	 border-radius: 25px; }
+
+
+a:link { color:navy; }
+
+a:visited { color:#e6e6fa; }
+
+a:active { color:red; }
+
+p { font-size:14px; color:white; }
+
+img { display:block; 
+	  margin-left:auto; 
+	  margin-right:auto; 
+	  padding:20px;
+	  border:20px solid darkred; 
+	  background-color:#021a40;}
