@@ -37,6 +37,11 @@ body { font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Ty
 
 #t1 td { background-color:darkred; border:10px solid #021a40; border-radius: 25px; } 
 
+
+#t3 { width:100%; font-size:14px; background-color:#5E5E5E; border-style:solid ; border-width:10px ; border-color:#021a40; text-align:center;}
+
+#t3 td {border:10px solid #021a40; }
+
 h2 { color:#021a40;
 	 border-style:solid; 
 	 font-weight:bold;
@@ -61,3 +66,5 @@ img { display:block;
 	  padding:20px;
 	  border:20px solid darkred; 
 	  background-color:#021a40;}
+	  
+	 
