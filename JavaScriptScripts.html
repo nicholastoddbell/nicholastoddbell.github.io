@@ -1,0 +1,163 @@
+<!DOCTYPE html>                                      <!--validator-->
+<html xmlns = "http://www.w3.org/1999/xhtml" lang = "en">		<!--declare namespace-->
+  <head>											<!--creates a head element-->
+    <meta charset="UTF-8">
+    <title>Squares and Cubes of Positive Integers</title>						<!--titles the page-->
+    <link href="mystyles.css" rel="stylesheet" type="text/css" media="all">
+    
+		<!-- Menu -->
+		<div class="navbar">
+			<a href="https://nicholastoddbell.github.io/index.html">Home</a>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Javascript 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Cubes and Squares</a>
+					<a href="#">Database Driven Placeholder</a>
+				</div>
+		   </div>
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">PHP 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Cubes and Squares</a>
+					<a href="#">Database Driven Placeholder</a>
+				</div>
+		   </div> 
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">Unity 2D 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Flashcards/index.html">Flashcards</a>
+					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Roulette/index.html">Roulette</a>
+					<a href="#">Game Time!</a>
+				</div>
+		   </div> 
+
+		   <div class="dropdown">
+				<button class="dropbtn">.NET 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Tic-Tac-Toe</a>
+					<a href="#">.NET Project Placeholder</a>
+				</div>
+		   </div> 
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">Python 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Python Project Placeholder</a>
+					<a href="#">Python Project Placeholder</a>
+				</div>
+		   </div> 
+		   
+			<a href="#news">Contact Me</a>
+		</div>
+    
+<script type = "text/javascript">
+         <!--
+         
+		 
+         
+            var number = new Array();   // allocate empty array
+                pick = 1,				// The loop the user picked
+				
+			
+			//prompt the user to pick a loop
+			 pick = window.prompt("What type of loop would you prefer?\n Choose a number: \n 1. While Loop\n  2. for a For Loop.\n  3.Do Loop.", "1");
+			//prompt user for the number of times to run through the loop
+			user = window.prompt("How many times shall we run through the loop?", "10");
+			
+			
+			 //handle invalid pick
+			if (pick !== "1" && pick !== "2" && pick !== "3") 
+			{
+				document.writeln ("You have made an invalid choice.  Please refresh the page and pick 1, 2, or 3 for your loop choice.");
+			} 
+			
+			 //handle invalid user specified times to loop
+			if (user < "1") 
+			{
+				document.writeln ("You have made an invalid choice.  Please refresh the page and pick a positive number.");
+			} 
+			
+		
+			
+            // assign values to the array  
+            for ( var i = 1; i <= user; i++ )     
+               number[ i ] = i;
+                                               
+                 
+            writeArray( "Calculation Results:", number );
+            
+         
+         // display heading then three-column table with array data and calculations"  
+         function writeArray( heading, Array )
+         {
+            document.writeln( "<h2>" + heading + "</h2>" );
+            document.writeln( "<table border = \"1\" width =" + "\"100%\">" );
+   
+            document.writeln( "<thead><th width = \"100\"" + "align = \"center\">Value</th>" + "<th align = \"center\">Square</th>" + "<th align = \"center\">Cube</th></thead><tbody>" ); 
+			   
+			   
+		switch (pick)
+		{
+		  case "1":  //this runs a while loop
+			var i = 1;
+			while ( i < Array.length )
+			{
+				document.writeln( "<tr><td>" + i + "</td><td>" +
+                  square(Array[ i ]) + "</td><td>" +
+                  cube(Array[ i ]) + "</td></tr>" );
+				i++
+            
+			}
+		   break;
+		   
+		   case "2":  //this runs a for loop
+			 for ( var i = 1; i < Array.length; i++ ) 
+               document.writeln( "<tr><td>" + i + "</td><td>" +
+                  square(Array[ i ]) + "</td><td>" +
+                  cube(Array[ i ]) + "</td></tr>" );
+			break;
+			
+			case "3":  //this runs a do while loop
+			var i = 1;
+			do
+			{
+				document.writeln( "<tr><td>" + i + "</td><td>" +
+                  square(Array[ i ]) + "</td><td>" +
+                  cube(Array[ i ]) + "</td></tr>" );
+				i++
+            }
+			while ( i < Array.length )
+		   break;
+			
+			
+			
+		}//end switch cases
+			
+			
+			
+			
+                  
+            document.writeln( "</tbody></table>" );
+         }
+		 
+	function square (placeholder)   //calculates the square of the number
+		{ return placeholder * placeholder;}
+	function cube (placeholder)     //calculates the cube of the number
+		{ return placeholder * placeholder * placeholder;}
+         // -->
+      </script>
+      </body>
+</html>
