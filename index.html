@@ -11,6 +11,7 @@
     * Key Features: Link to email and link to .pdf resume
 	
 	*UPDATED 11/21/2018 Due to HTML Validation Errors - add </p> to line 50
+	*UPDATED 12/9/2018 Changed the menu from html table to css navbar
 
 -->
 <!-- Define document as HTML5 -->
@@ -28,17 +29,64 @@
 	</head>
 <!-- Create the body element -->		
 	<body>
-		<!-- Create a table for the Menu section -->
-		<table id = "t1">
-			<tr>
-				<th colspan = "1">
-					<p class = "menu1">Menu</p>
-				</th>
-			</tr>
-			<tr>
-				<td><a href = "https://nicholastoddbell.github.io/index.html">Home</a></td>
-			</tr>
-		</table>
+		<!-- Menu -->
+		<div class="navbar">
+			<a href="https://nicholastoddbell.github.io/index.html">Home</a>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Javascript 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Cubes and Squares</a>
+					<a href="#">Database Driven Placeholder</a>
+				</div>
+		   </div>
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">PHP 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Cubes and Squares</a>
+					<a href="#">Database Driven Placeholder</a>
+				</div>
+		   </div> 
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">Unity 2D 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Flashcards</a>
+					<a href="#">Roulette</a>
+					<a href="#">Game Time!</a>
+				</div>
+		   </div> 
+
+		   <div class="dropdown">
+				<button class="dropbtn">.NET 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Tic-Tac-Toe</a>
+					<a href="#">.NET Project Placeholder</a>
+				</div>
+		   </div> 
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">Python 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Python Project Placeholder</a>
+					<a href="#">Python Project Placeholder</a>
+				</div>
+		   </div> 
+		   
+			<a href="#news">Contact Me</a>
+		</div>
+
 		<!-- Content -->
 		<h2>About Me</h2>
 		
