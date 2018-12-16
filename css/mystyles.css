@@ -1,0 +1,192 @@
+/*
+
+    * Date: 11/11/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: mystyles.css external style sheet
+
+    * Program Description: This is the external style sheet holding all formating for my Portfolio.
+	*UPDATED 12/9/2018 Changed the menu from html table to css navbar
+	*UPDATED 12/15/2018 adjust navbar to be rounded, shadowed and content underlined, increased td font-size
+*/
+html 
+{ 
+	display:table;
+	margin:auto;   
+}
+
+body 
+{ 	font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+	background-color:#909497; 
+	text-align:center; 
+	display:table-cell;
+	vertical-align:middle; 
+}
+	   
+#t1 
+{ 
+	width:100%; 
+	font-size:14px; 
+	background-color:#909497; 
+	border-style:solid ; 
+	border-width:10px ; 
+	border-color:#021a40; 
+	text-align:center; 
+	border-radius: 25px; 
+}
+
+#t3 
+{
+	width:100%; 
+	font-size:14px; 
+	background-color:#909497; 
+	border-style:solid ; 
+	border-width:10px ; 
+	border-color:#021a40; 
+	text-align:center;
+	border-radius:25px; 
+}
+	  
+#t3 th 
+{ 	border:10px solid #021a40; 
+    border-radius:25px;
+	background-color:#4A4A4A 
+}
+
+#t3 td 
+{	border:10px solid #021a40; 
+    border-radius:25px;
+	background-color:#909497 
+}
+
+h2 
+{
+	color:#021a40;
+	border-style:solid; 
+	font-weight:bold;
+	text-align:center; 
+	font-size:32px; 
+	text-transform:uppercase; 
+	border-width:10px; 
+	border-radius:25px; 
+}
+	 
+h4 
+{
+	color:white;
+	font-wieght:bold;
+	font-size:20px
+}
+
+td
+{
+	font-size:20px;
+}
+
+
+a:link { color:navy; }
+
+a:visited { color:#e6e6fa; }
+
+a:active { color:red; }
+
+p 
+{ 
+	font-size:18px; 
+	color:white; 
+}
+
+img 
+{ 
+	/*display:block;
+	margin-left:auto; 
+	margin-right:auto; */
+	padding:20px;
+	border:20px solid darkgreen; 
+	background-color:#021a40;
+	border-radius:25px; 
+}
+
+/* Navbar container */
+.navbar 
+{
+  border-radius:25px;
+  overflow:auto;
+  background-color:darkgreen;
+  font-family:"Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;;
+}
+
+/* Links inside the navbar */
+.navbar a 
+{
+  border-radius:25px;
+  float:left;
+  font-size:20px;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+}
+
+/* The dropdown container */
+.dropdown 
+{
+  border-radius:25px;
+  float:left;
+  overflow:auto;
+}
+
+/* Dropdown button */
+.dropdown .dropdownbutton 
+{
+  font-size:20px; 
+  border:none;
+  outline:none;
+  color:white;
+  padding:14px 16px;
+  background-color:inherit;
+  font-family:inherit; /* Important for vertical align on mobile phones */
+  margin:0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a different background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropdownbutton 
+{
+  background-color:#021a40;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown_content 
+{
+  border-radius:25px;
+  display:none;
+  position:absolute;
+  background-color:#021a40;
+  min-width:160px;
+  box-shadow:16px 8px 20px 0px darkgreen;
+  z-index:1;
+}
+
+/* Links inside the dropdown */
+.dropdown_content a 
+{
+  float:none;
+  color:white;
+  padding:12px 16px;
+  text-decoration:underline darkgreen;
+  display:block;
+  text-align:left;
+}
+
+/* Add different background color to dropdown links on hover */
+.dropdown_content a:hover 
+{
+  background-color:darkgreen;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_content 
+{
+  display: block;
+}

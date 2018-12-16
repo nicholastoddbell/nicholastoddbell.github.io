@@ -1,0 +1,86 @@
+<!--
+
+    * Date: 11/11/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: index.html homepage 
+
+    * Program Description: This is the homepage for my GitHub Portfolio.
+
+    * Key Features: Link to email and link to .pdf resume
+	
+	*UPDATED 11/21/2018 Due to HTML Validation Errors - add </p> to line 50
+	*UPDATED 12/9/2018 Changed the menu from html table to css navbar
+
+-->
+<!-- Define document as HTML5 -->
+<!DOCTYPE html>
+<!-- Declare the namespace -->
+<html xmlns = "http://www.w3.org/1999/xhtml" lang = "en">
+<!-- Create head element -->
+	<head>
+		<!-- Declare character set -->	
+		<meta charset = "UTF-8">
+		<!-- Give the page a title -->
+		<title>Homepage</title>
+		<!-- Link an external cascading style sheet -->
+		<link href = "mystyles.css" rel = "stylesheet" type = "text/css" media = "all">
+	</head>
+
+<!--  Example of using javascript:
+
+	<script language="javascript" type="text/javascript">
+
+		your javascript here
+
+	</script>
+-->
+<!-- Create the body element -->		
+	<body>
+		<!-- Trial Menu -->
+
+		<!-- Create a table for the Menu section -->
+		<table id = "t1">
+			<tr>
+				<th colspan = "1">
+					<p class = "menu1">Menu</p>
+				</th>
+			</tr>
+			<tr>
+				<td><a href = "https://nicholastoddbell.github.io/index.html"><p>Home</p></a></td>
+			</tr>
+		</table>
+		<!-- Content -->
+		<h2>About Me</h2>
+		
+		<h4>Nicholas T. Bell </h4>   
+		<p>11901 4th St N<br/>
+		   10207<br/>
+		   St Petersburg, FL 33716 <br/>
+		   (727) 459-7697 <br/>
+		</p>
+		<!--link to email-->
+	    <a href = "mailto:nicholastoddbell@gmail.com"><h3>nicholastoddbell@gmail.com</h3></a> 
+		<br/><br/>
+		<div id = "pic">
+		<a href = "NickJamaicaSnorkelAdventure.jpg" target = "_blank">
+			<img src = "NickJamaicaSnorkelAdventure.jpg" alt = "Nick in Jamaica!"/>
+		</a>
+		</div>
+        <!--creates link to resume and displays resume as text with accents above the e's in a new paragraph-->
+		<a href = "NicholasTBell.pdf" target = "_blank"><h1>Nick's R&#233;sum&#233;</h1></a>  
+        <!---Code Validation-->
+		<table id = "t3"> 
+			<tr>
+				<th colspan = "1">
+					<p>Validation Links</p>
+				</th>					
+			</tr>
+			<tr>
+				<td><a href = "https://validator.w3.org/nu/?doc=https%3A%2F%2Fnicholastoddbell.github.io%2Findex.html">Home</a></td>
+			</tr>
+		</table>
+			
+	</body>
+</html>

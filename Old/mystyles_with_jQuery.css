@@ -1,0 +1,547 @@
+/*
+
+    * Date: 11/11/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: mystyles.css external style sheet
+
+    * Program Description: This is the external style sheet holding all formating for my Portfolio.
+
+*/
+html 
+{ 
+	display:table;
+	margin:auto;   
+}
+
+body 
+{ 	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace; 
+	background-color:#909497; 
+	text-align:center; 
+	display:table-cell;
+	vertical-align:middle; 
+}
+	   
+.menu1 
+{ 
+	color:#021a40; 
+	font-weight:bold;
+	text-align:center; 
+	font-size:50px; 
+	text-shadow: 7px 7px darkgreen; 
+	text-transform: uppercase; 
+}
+
+#t1 
+{ 
+	width:100%; 
+	font-size:14px; 
+	background-color:#909497; 
+	border-style:solid ; 
+	border-width:10px ; 
+	border-color:#021a40; 
+	text-align:center; 
+	border-radius: 25px; 
+}
+
+#t1 th 
+{
+	background:url("https://nicholastoddbell.github.io/tablebackground.jpg") 
+    repeat; 
+    border:10px solid #021a40;
+	border-radius: 25px; 
+}
+
+#t1 td 
+{	background-color:darkgreen; 
+	border:10px solid #021a40; 
+	border-radius: 25px; 
+} 
+
+
+#t3 
+{
+	width:100%; 
+	font-size:14px; 
+	background-color:#909497; 
+	border-style:solid ; 
+	border-width:10px ; 
+	border-color:#021a40; 
+	text-align:center;
+	border-radius: 25px; 
+}
+	  
+#t3 th 
+{ 	border:10px solid #021a40; 
+    border-radius: 25px;
+	background-color:#4A4A4A 
+}
+
+#t3 td 
+{	border:10px solid #021a40; 
+    border-radius: 25px;
+	background-color:#909497 
+}
+
+h2 
+{
+	color:#021a40;
+	border-style:solid; 
+	font-weight:bold;
+	text-align:center; 
+	font-size:32px; 
+	text-transform:uppercase; 
+	border-width:10px; 
+	border-radius: 25px; 
+}
+	 
+h4 
+{
+	color:white;
+	font-wieght:bold;
+	font-size:20px
+}
+
+
+a:link { color:navy; }
+
+a:visited { color:#e6e6fa; }
+
+a:active { color:red; }
+
+p 
+{ font-size:18px; 
+	color:white; 
+}
+
+img 
+{ display:block; 
+	  margin-left:auto; 
+	  margin-right:auto; 
+	  padding:20px;
+	  border:20px solid darkgreen; 
+	  background-color:#021a40;
+	  border-radius: 25px; 
+}
+	  
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+#css_jQuery_menu 
+{
+  background: #021a40;
+  margin: 0;
+  width: auto;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+}
+#css_jQuery_menu ul 
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#css_jQuery_menu ul:after,
+#css_jQuery_menu:after 
+{
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#css_jQuery_menu ul li 
+{
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+#css_jQuery_menu ul li a 
+{
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#css_jQuery_menu ul li ul 
+{
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#css_jQuery_menu ul li ul li 
+{
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: darkgreen;
+}
+#css_jQuery_menu ul li ul li.has-sub:after 
+{
+  display: block;
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #000000;
+  z-index: 1;
+  top: 13px;
+  right: 15px;
+}
+#css_jQuery_menu.align-right ul li ul li.has-sub:after 
+{
+  right: auto;
+  left: 15px;
+}
+#css_jQuery_menu ul li ul li.has-sub:before 
+{
+  display: block;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  border-left-color: darkgreen;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+#css_jQuery_menu.align-right ul li ul li.has-sub:before 
+{
+  right: auto;
+  left: 15px;
+  border-left-color: transparent;
+  border-right-color: darkgreen;
+}
+#css_jQuery_menu ul li ul li a 
+{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  color: #000000;
+  letter-spacing: 0;
+  display: block;
+  width: 170px;
+  padding: 11px 10px 11px 20px;
+}
+#css_jQuery_menu ul li ul li:hover > a,
+#css_jQuery_menu ul li ul li.active > a 
+{
+  color: #021a40;
+}
+#css_jQuery_menu ul li ul li:hover:after,
+#css_jQuery_menu ul li ul li.active:after 
+{
+  background: #021a40;
+}
+#css_jQuery_menu ul li ul li:hover > ul 
+{
+  left: 100%;
+  top: 0;
+}
+#css_jQuery_menu ul li ul li:hover > ul > li 
+{
+  max-height: 72px;
+  position: relative;
+}
+#css_jQuery_menu > ul > li 
+{
+  float: left;
+}
+#css_jQuery_menu.align-center > ul > li 
+{
+  float: none;
+  display: inline-block;
+}
+#css_jQuery_menu.align-center > ul 
+{
+  text-align: center;
+}
+#css_jQuery_menu.align-center ul ul 
+{
+  text-align: left;
+}
+#css_jQuery_menu.align-right > ul 
+{
+  float: right;
+}
+#css_jQuery_menu.align-right > ul > li:hover > ul 
+{
+  left: auto;
+  right: 0;
+}
+#css_jQuery_menu.align-right ul ul li:hover > ul 
+{
+  right: 100%;
+  left: auto;
+}
+#css_jQuery_menu.align-right ul ul li a 
+{
+  text-align: right;
+}
+#css_jQuery_menu > ul > li:after 
+{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: darkgreen;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+#css_jQuery_menu > ul > li.has-sub > a 
+{
+  padding-right: 40px;
+}
+#css_jQuery_menu > ul > li.has-sub > a:after 
+{
+  display: block;
+  content: "";
+  background: darkgreen;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 16px;
+}
+#css_jQuery_menu > ul > li.has-sub > a:before 
+{
+  display: block;
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: #021a40;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+#css_jQuery_menu > ul > li > a 
+{
+  color: darkgreen;
+  padding: 15px 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+#css_jQuery_menu > ul > li:hover:after,
+#css_jQuery_menu > ul > li.active:after 
+{
+  height: 100%;
+}
+#css_jQuery_menu > ul > li:hover > a,
+#css_jQuery_menu > ul > li.active > a 
+{
+  color: #000000;
+}
+#css_jQuery_menu > ul > li:hover > a:after,
+#css_jQuery_menu > ul > li.active > a:after 
+{
+  background: #000000;
+}
+#css_jQuery_menu > ul > li:hover > a:before,
+#css_jQuery_menu > ul > li.active > a:before 
+{
+  border-top-color: darkgreen;
+}
+#css_jQuery_menu > ul > li:hover > ul 
+{
+  left: 0;
+}
+#css_jQuery_menu > ul > li:hover > ul > li 
+{
+  max-height: 72px;
+  position: relative;
+}
+#css_jQuery_menu #menu_button 
+{
+  display: none;
+}
+#css_jQuery_menu > ul > li > a 
+{
+  display: block;
+}
+#css_jQuery_menu > ul > li 
+{
+  width: auto;
+}
+#css_jQuery_menu > ul > li > ul 
+{
+  width: 170px;
+  display: block;
+}
+#css_jQuery_menu > ul > li > ul > li 
+{
+  width: 170px;
+  display: block;
+}
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) 
+{
+  #css_jQuery_menu > ul 
+  {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.35s ease-out;
+    -moz-transition: max-height 0.35s ease-out;
+    -ms-transition: max-height 0.35s ease-out;
+    -o-transition: max-height 0.35s ease-out;
+    transition: max-height 0.35s ease-out;
+  }
+  #css_jQuery_menu > ul > li > ul 
+  {
+    width: 100%;
+    display: block;
+  }
+  #css_jQuery_menu.align-right ul li a 
+  {
+    text-align: left;
+  }
+  #css_jQuery_menu > ul > li > ul > li 
+  {
+    width: 100%;
+    display: block;
+  }
+  #css_jQuery_menu.align-right ul ul li a 
+  {
+    text-align: left;
+  }
+  #css_jQuery_menu > ul > li > ul > li > a 
+  {
+    width: 100%;
+    display: block;
+  }
+  #css_jQuery_menu ul li ul li a 
+  {
+    width: 100%;
+  }
+  #css_jQuery_menu.align-center > ul 
+  {
+    text-align: left;
+  }
+  #css_jQuery_menu.align-center > ul > li 
+  {
+    display: block;
+  }
+  #css_jQuery_menu > ul.open 
+  {
+    max-height: 1000px;
+    border-top: 1px solid rgba(110, 110, 110, 0.25);
+  }
+  #css_jQuery_menu ul 
+  {
+    width: 100%;
+  }
+  #css_jQuery_menu ul > li 
+  {
+    float: none;
+    width: 100%;
+  }
+  #css_jQuery_menu ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  #css_jQuery_menu ul > li:after {
+    display: none;
+  }
+  #css_jQuery_menu ul li.has-sub > a:after,
+  #css_jQuery_menu ul li.has-sub > a:before,
+  #css_jQuery_menu ul li ul li.has-sub:after,
+  #css_jQuery_menu ul li ul li.has-sub:before {
+    display: none;
+  }
+  #css_jQuery_menu ul li ul,
+  #css_jQuery_menu ul li ul li ul,
+  #css_jQuery_menu ul li ul li:hover > ul,
+  #css_jQuery_menu.align-right ul li ul,
+  #css_jQuery_menu.align-right ul li ul li ul,
+  #css_jQuery_menu.align-right ul li ul li:hover > ul {
+    left: 0;
+    position: relative;
+    right: auto;
+  }
+  #css_jQuery_menu ul li ul li,
+  #css_jQuery_menu ul li:hover > ul > li {
+    max-height: 999px;
+    position: relative;
+    background: none;
+  }
+  #css_jQuery_menu ul li ul li a {
+    padding: 8px 20px 8px 35px;
+    color: darkgreen;
+  }
+  #css_jQuery_menu ul li ul ul li a {
+    padding: 8px 20px 8px 50px;
+  }
+  #css_jQuery_menu ul li ul li:hover > a {
+    color: #000000;
+  }
+  #css_jQuery_menu #menu_button {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: darkgreen;
+    cursor: pointer;
+  }
+  #css_jQuery_menu #menu_button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid darkgreen;
+    border-bottom: 2px solid darkgreen;
+    right: 20px;
+    top: 16px;
+  }
+  #css_jQuery_menu #menu_button:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid darkgreen;
+    right: 20px;
+    top: 26px;
+  }
+}
+
+	  
+	 

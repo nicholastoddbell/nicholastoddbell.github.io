@@ -1,29 +1,42 @@
+<!--
+
+    * Date: 12/9/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: JavaScriptScripts.html Squares and Cubes 
+
+    * Program Description: This page asks the user for input and then through arrays, functions, switches and loops to calculate squares and cubes.
+						   It then displays the number and it's square and cube in tabular form.
+						   An if statement is used to handle potential invalid entries
+
+    * Key Features: Link to email and link to .pdf resume
+	
+	*UPDATED 12/15/2018 adjust navbar to be rounded, shadowed and content underlined
+
+-->
 <!DOCTYPE html>                                      <!--validator-->
 <html xmlns = "http://www.w3.org/1999/xhtml" lang = "en">		<!--declare namespace-->
   <head>											<!--creates a head element-->
     <meta charset="UTF-8">
     <title>Squares and Cubes of Positive Integers</title>						<!--titles the page-->
-    <link href="mystyles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/mystyles.css" rel="stylesheet" type="text/css" media="all">
     
 		<!-- Menu -->
 		<div class="navbar">
 			<a href="https://nicholastoddbell.github.io/index.html">Home</a>
 			
 			<div class="dropdown">
-				<button class="dropbtn">Javascript 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">Javascript</button>
+				<div class="dropdown_content">
 					<a href="https://nicholastoddbell.github.io/JavaScriptScripts.html">Cubes and Squares</a>
 					<a href="#">Database Driven Placeholder</a>
 				</div>
 		   </div>
-
+		   
 		   <div class="dropdown">
-				<button class="dropbtn">Unity 2D 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">Unity 2D</button>
+				<div class="dropdown_content">
 					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Flashcards/index.html">Flashcards</a>
 					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Roulette/index.html">Roulette</a>
 					<a href="#">Game Time!</a>
@@ -31,29 +44,23 @@
 		   </div> 
 
 		   <div class="dropdown">
-				<button class="dropbtn">.NET 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">.NET</button>
+				<div class="dropdown_content">
 					<a href="#">Tic-Tac-Toe</a>
 					<a href="#">.NET Project Placeholder</a>
 				</div>
 		   </div> 
 		   
 		   <div class="dropdown">
-				<button class="dropbtn">Python 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">Python</i></button>
+				<div class="dropdown_content">
 					<a href="#">Python Project Placeholder</a>
 					<a href="#">Python Project Placeholder</a>
 				</div>
 		   </div> 
-		   
-			<a href="#news">Contact Me</a>
 		</div>
-    
-<script>
+
+		<script>
          <!--
          
 		 
@@ -63,7 +70,7 @@
 				
 			
 			//prompt the user to pick a loop
-			 pick = window.prompt("What type of loop would you prefer?\n Choose a number: \n 1. While Loop\n  2. for a For Loop.\n  3.Do Loop.", "1");
+			pick = window.prompt("\nWhat type of loop would you prefer?\n\nChoose a number:\n1. While Loop\n2. For Loop.\n3. Do Loop.", "1");
 			//prompt user for the number of times to run through the loop
 			user = window.prompt("How many times shall we run through the loop?", "10");
 			
@@ -96,58 +103,58 @@
             document.writeln( "<h2>" + heading + "</h2>" );
             document.writeln( "<table border = \"1\" width =" + "\"100%\">" );
    
-            document.writeln( "<thead><th width = \"100\"" + "align = \"center\">Value</th>" + "<th align = \"center\">Square</th>" + "<th align = \"center\">Cube</th></thead><tbody>" ); 
+            document.writeln( "<thead><th width = \"100\"" + "align = \"center\"><p>Value</p></th>" + "<th align = \"center\"><p>Square<\p></th>" + "<th align = \"center\"><p>Cube<\p></th></thead><tbody>" ); 
 			   
 			   
-		switch (pick)
-		{
-		  case "1":  //this runs a while loop
-			var i = 1;
-			while ( i < Array.length )
+			switch (pick)
 			{
-				document.writeln( "<tr><td>" + i + "</td><td>" +
-                  square(Array[ i ]) + "</td><td>" +
-                  cube(Array[ i ]) + "</td></tr>" );
-				i++
-            
-			}
-		   break;
-		   
-		   case "2":  //this runs a for loop
-			 for ( var i = 1; i < Array.length; i++ ) 
-               document.writeln( "<tr><td>" + i + "</td><td>" +
-                  square(Array[ i ]) + "</td><td>" +
-                  cube(Array[ i ]) + "</td></tr>" );
-			break;
-			
-			case "3":  //this runs a do while loop
-			var i = 1;
-			do
-			{
-				document.writeln( "<tr><td>" + i + "</td><td>" +
-                  square(Array[ i ]) + "</td><td>" +
-                  cube(Array[ i ]) + "</td></tr>" );
-				i++
-            }
-			while ( i < Array.length )
-		   break;
-			
-			
-			
-		}//end switch cases
-			
-			
-			
-			
-                  
+			  case "1":  //this runs a while loop
+				var i = 1;
+				while ( i < Array.length )
+				{
+					document.writeln( "<tr><td>" + i + "</td><td>" +
+					  square(Array[ i ]) + "</td><td>" +
+					  cube(Array[ i ]) + "</td></tr>" );
+					i++
+				
+				}
+			   break;
+			   
+			   case "2":  //this runs a for loop
+				 for ( var i = 1; i < Array.length; i++ ) 
+				   document.writeln( "<tr><td>" + i + "</td><td>" +
+					  square(Array[ i ]) + "</td><td>" +
+					  cube(Array[ i ]) + "</td></tr>" );
+				break;
+				
+				case "3":  //this runs a do while loop
+				var i = 1;
+				do
+				{
+					document.writeln( "<tr><td>" + i + "</td><td>" +
+					  square(Array[ i ]) + "</td><td>" +
+					  cube(Array[ i ]) + "</td></tr>" );
+					i++
+				}
+				while ( i < Array.length )
+			   break;
+				
+				
+				
+			}//end switch cases
+       
             document.writeln( "</tbody></table>" );
-         }
+        }
 		 
 	function square (placeholder)   //calculates the square of the number
-		{ return placeholder * placeholder;}
+		{ 
+			return placeholder * placeholder;
+		}
 	function cube (placeholder)     //calculates the cube of the number
-		{ return placeholder * placeholder * placeholder;}
+		{ 
+			return placeholder * placeholder * placeholder;
+		}
          // -->
       </script>
-      </body>
+      </head>
 </html>

@@ -1,0 +1,67 @@
+/*
+
+    * Date: 12/15/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: form.css external style sheet
+
+    * Program Description: This is the external style sheet holding formatting for the contact form.
+
+*/
+div#contact_form
+{
+	text-align:center;
+	border:1px solid #ccc;
+	padding:0 50px 15px;
+	margin-top:20px;
+	box-shadow:0 0 15px;
+	border-radius:6px;
+}
+
+hr
+{
+	margin-top:-5px
+}
+
+
+label
+{
+	float:left;
+	font-size:16px
+}
+
+
+input[type="text"]
+{
+	width:100%;
+	margin-top:10px;
+	height:35px;
+	margin-bottom:25px;
+	padding:10px;
+	border:6px solid darkgreen
+}
+
+textarea
+{
+	width:100%;
+	border:6px solid darkgreen;
+	padding:10px;
+	margin-bottom:25px;
+	margin-top:10px;
+	height:100px;
+	resize:none
+}
+
+input[type="submit"]:hover
+{
+	padding:10px 45px;
+	background-color:darkgreen;
+	border-style:outset;
+	border-color:white;
+	color:#fff;
+	font-size:18px;
+	font-weight:700;
+	cursor:pointer;
+}
+

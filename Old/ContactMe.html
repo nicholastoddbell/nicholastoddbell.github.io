@@ -1,0 +1,143 @@
+<!--
+
+    * Date: 11/11/2018
+
+    * Developed by: Nicholas Bell
+
+    * Program Title: index.html homepage 
+
+    * Program Description: This is the homepage for my GitHub Portfolio.
+
+    * Key Features: Link to email and link to .pdf resume
+	
+	*UPDATED 11/21/2018 Due to HTML Validation Errors - add </p> to line 50
+	*UPDATED 12/9/2018 Changed the menu from html table to css navbar and add Javascript Cubes and Squares to validation links table
+	*UPDATED 12/13/2018 Added folders for organization - updating href for Images and Documents
+
+-->
+<!-- Define document as HTML5 -->
+<!DOCTYPE html>
+<!-- Declare the namespace -->
+<html xmlns = "http://www.w3.org/1999/xhtml" lang = "en">
+<!-- Create head element -->
+	<head>
+		<!-- Declare character set -->	
+		<meta charset = "UTF-8">
+		<!-- Give the page a title -->
+		<title>Homepage</title>
+		<!-- Link an external cascading style sheet -->
+		<link href = "mystyles.css" rel = "stylesheet" type = "text/css" media = "all">
+		<link href="css/form.css" rel="stylesheet">
+	</head>
+<!-- Create the body element -->		
+	<body>
+		<!-- Menu -->
+		<div class="navbar">
+			<a href="https://nicholastoddbell.github.io/index.html">Home</a>
+			
+			<div class="dropdown">
+				<button class="dropbtn">Javascript 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="https://nicholastoddbell.github.io/JavaScriptScripts.html">Cubes and Squares</a>
+					<a href="#">Database Driven Placeholder</a>
+				</div>
+		   </div>
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">Unity 2D 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Flashcards/index.html">Flashcards</a>
+					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Roulette/index.html">Roulette</a>
+					<a href="#">Game Time!</a>
+				</div>
+		   </div> 
+
+		   <div class="dropdown">
+				<button class="dropbtn">.NET 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Tic-Tac-Toe</a>
+					<a href="#">.NET Project Placeholder</a>
+				</div>
+		   </div> 
+		   
+		   <div class="dropdown">
+				<button class="dropbtn">Python 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Python Project Placeholder</a>
+					<a href="#">Python Project Placeholder</a>
+				</div>
+		   </div> 
+		   
+			<a href="#news">Contact Me</a>
+		</div>
+		<!-- form -->
+		<div id="contact_form"></div>
+		<script>
+			// Fetching HTML Elements in Variables by ID.
+			var x = document.getElementById("contact_form");
+			var createform = document.createElement('form'); // Create New Element Form
+			createform.setAttribute("action", ""); // Setting Action Attribute on Form
+			createform.setAttribute("method", "post"); // Setting Method Attribute on Form
+			x.appendChild(createform);
+
+			var heading = document.createElement('h2'); // Heading of Form
+			heading.innerHTML = "Contact Form ";
+			createform.appendChild(heading);
+
+			var line = document.createElement('hr'); // Giving Horizontal Row After Heading
+			createform.appendChild(line);
+
+			var linebreak = document.createElement('br');
+			createform.appendChild(linebreak);
+
+			var namelabel = document.createElement('label'); // Create Label for Name Field
+			namelabel.innerHTML = "Your Name : "; // Set Field Labels
+			createform.appendChild(namelabel);
+
+			var inputelement = document.createElement('input'); // Create Input Field for Name
+			inputelement.setAttribute("type", "text");
+			inputelement.setAttribute("name", "dname");
+			createform.appendChild(inputelement);
+
+			var linebreak = document.createElement('br');
+			createform.appendChild(linebreak);
+
+			var emaillabel = document.createElement('label'); // Create Label for E-mail Field
+			emaillabel.innerHTML = "Your Email : ";
+			createform.appendChild(emaillabel);
+
+			var emailelement = document.createElement('input'); // Create Input Field for E-mail
+			emailelement.setAttribute("type", "text");
+			emailelement.setAttribute("name", "demail");
+			createform.appendChild(emailelement);
+
+			var emailbreak = document.createElement('br');
+			createform.appendChild(emailbreak);
+
+			var messagelabel = document.createElement('label'); // Append Textarea
+			messagelabel.innerHTML = "Your Message : ";
+			createform.appendChild(messagelabel);
+
+			var texareaelement = document.createElement('textarea');
+			texareaelement.setAttribute("name", "dmessage");
+			createform.appendChild(texareaelement);
+
+			var messagebreak = document.createElement('br');
+			createform.appendChild(messagebreak);
+
+			var submitelement = document.createElement('input'); // Append Submit Button
+			submitelement.setAttribute("type", "submit");
+			submitelement.setAttribute("name", "dsubmit");
+			submitelement.setAttribute("value", "Submit");
+			createform.appendChild(submitelement);
+		</script>
+	</body>
+</html>

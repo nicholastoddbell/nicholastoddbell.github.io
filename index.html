@@ -12,6 +12,8 @@
 	
 	*UPDATED 11/21/2018 Due to HTML Validation Errors - add </p> to line 50
 	*UPDATED 12/9/2018 Changed the menu from html table to css navbar and add Javascript Cubes and Squares to validation links table
+	*UPDATED 12/13/2018 Added folders for organization - updating href for Images and Documents
+	*UPDATED 12/15/2018 adjust navbar to be rounded, shadowed and content underlined
 
 -->
 <!-- Define document as HTML5 -->
@@ -25,7 +27,7 @@
 		<!-- Give the page a title -->
 		<title>Homepage</title>
 		<!-- Link an external cascading style sheet -->
-		<link href = "mystyles.css" rel = "stylesheet" type = "text/css" media = "all">
+		<link href = "css/mystyles.css" rel = "stylesheet" type = "text/css" media = "all">
 	</head>
 <!-- Create the body element -->		
 	<body>
@@ -34,20 +36,16 @@
 			<a href="https://nicholastoddbell.github.io/index.html">Home</a>
 			
 			<div class="dropdown">
-				<button class="dropbtn">Javascript 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">Javascript</button>
+				<div class="dropdown_content">
 					<a href="https://nicholastoddbell.github.io/JavaScriptScripts.html">Cubes and Squares</a>
 					<a href="#">Database Driven Placeholder</a>
 				</div>
 		   </div>
 		   
 		   <div class="dropdown">
-				<button class="dropbtn">Unity 2D 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">Unity 2D</button>
+				<div class="dropdown_content">
 					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Flashcards/index.html">Flashcards</a>
 					<a href="https://nicholastoddbell.github.io/Unity2D-CSharp-Roulette/index.html">Roulette</a>
 					<a href="#">Game Time!</a>
@@ -55,26 +53,20 @@
 		   </div> 
 
 		   <div class="dropdown">
-				<button class="dropbtn">.NET 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">.NET</button>
+				<div class="dropdown_content">
 					<a href="#">Tic-Tac-Toe</a>
 					<a href="#">.NET Project Placeholder</a>
 				</div>
 		   </div> 
 		   
 		   <div class="dropdown">
-				<button class="dropbtn">Python 
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content">
+				<button class="dropdownbutton">Python</i></button>
+				<div class="dropdown_content">
 					<a href="#">Python Project Placeholder</a>
 					<a href="#">Python Project Placeholder</a>
 				</div>
 		   </div> 
-		   
-			<a href="#news">Contact Me</a>
 		</div>
 
 		<!-- Content -->
@@ -90,12 +82,12 @@
 	    <a href = "mailto:nicholastoddbell@gmail.com"><h3>nicholastoddbell@gmail.com</h3></a> 
 		<br/><br/>
 		<div id = "pic">
-		<a href = "NickJamaicaSnorkelAdventure.jpg" target = "_blank">
-			<img src = "NickJamaicaSnorkelAdventure.jpg" alt = "Nick in Jamaica!"/>
+		<a href = "Images/NickJamaicaSnorkelAdventure.jpg" target = "_blank">
+			<img src = "Images/NickJamaicaSnorkelAdventure.jpg" alt = "Nick in Jamaica!"/>
 		</a>
 		</div>
         <!--creates link to resume and displays resume as text with accents above the e's in a new paragraph-->
-		<a href = "NicholasTBell.pdf" target = "_blank"><h1>Nick's R&#233;sum&#233;</h1></a>  
+		<a href = "Documents/NicholasTBell.pdf" target = "_blank"><h1>Nick's R&#233;sum&#233;</h1></a>  
         <!---Code Validation-->
 		<table id = "t3"> 
 			<tr>
